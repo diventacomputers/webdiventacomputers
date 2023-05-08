@@ -3,7 +3,7 @@
 }
 
 .form-control-dark:focus {
-  border-color: #fff;
+  border-color: #ffffff;
   box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
 }
 
@@ -73,14 +73,25 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right:20px;
+  z-index: 1;
+}
 
+svg.logowhatsapp {
+  width: 80px;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
-.background-image {
+.background-image  {
   background-image: url("redLines.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,23 +163,27 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-
-
   div.gallery {
     margin: 5px;
     display: flex;
     float: left;
     width: auto;
-
+    position: relative;
+ 
+   
   }
+  
 
-  section.flexbox {
+  .flexbox {
     margin: 5px;
     display: flex;
-    float: center;
+    float: left;
     width: auto;
     flex-wrap: wrap;
     height: auto;
+    flex-direction: row;
+   
+    
 
   }
 
@@ -180,8 +195,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    width: 250px;
-    height: 300px;
+    max-width: 250px;
+    height: auto;
     margin: 10px;
     float: left;
     align-self: center;
@@ -189,7 +204,7 @@
     
     .product img {
       width: 100%;
-      margin-bottom: 10px;
+      
     }
 
     .product h3 {
@@ -208,6 +223,7 @@
       border: none;
       color: white;
       padding: 10px 20px;
+      margin-bottom: 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
